@@ -1,0 +1,169 @@
+/*
+    Document   : style
+    Created on : 2014-07-10 06:03 AM
+    Author     : evancaldwell
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+    display: block;
+}
+
+/* ===== Reset CSS ===== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ===== General Styles ===== */
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+	font-weight: bold;
+	font-size: 150%;
+}
+h3 {
+	font-weight: bold;
+	font-size: 120%;
+	line-height: 1.5;
+	margin-top: 10px;
+}
+p {
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+	/*font-size: 120%;*/
+	font-family: 'EB Garamond', serif;
+}
+
+.small {
+	color: darkgrey;
+	font-size: 80%;
+}
+
+#main {
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;
+}
+
+.header {
+	background-color: #FFFFFF;
+    	box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.2);
+    	height: 40px;
+    	padding: 10px;
+}
+
+
+/* ===== Think Box Styles ===== */
+#think-boxes {
+	width: 80%;
+    	margin: 0 auto;
+	background-color: #FFFFFF;
+    	box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.2);
+    	padding: 10px;
+}
+.think-box {
+	width: 50%;
+	height: -moz-fit-content;
+	height: -webkit-fit-content;
+	overflow: hidden;
+	float: left;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	-webkit-transition: width 1s;
+	transition: width 1s;
+}
+#old-think {
+	/*background: url("../img/ser_tile.png") repeat;*/
+}
+.pic-label {
+	position: absolute;
+	top: 120px;
+	background: #ffffff;
+	padding: 5px;
+	font-size: 200%;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	z-index: 99;
+}
+#old-think h2 {
+
+}
+#new-pic-label {
+	
+}
+#old-pic {
+	position: relative;
+	top: 0;
+	float: left;
+}
+#new-think {
+	/*background: url("../img/play_tile.png") repeat;*/
+}
+#new-pic {
+	position: relative;
+	top: 0;
+	float: right;
+}
+.pic-label {
+	overflow: hidden;
+	-webkit-transition: height 0.5s;
+	transition: height 0.5s;
+}
+.think-pic {
+	/*width: 760px;*/
+}
+.think-desc {
+	width: 0;
+	position: relative;
+	background: #f2f2f2;
+	overflow: hidden;
+	-webkit-transition: width 0.5s;
+	transition: width 0.5s;
+}
+#old-desc1 {
+	/*position: relative;*/
+	/*top: -1000px;*/
+	/*right: 0px;*/
+    	/*box-shadow: -2px 2px 1px 1px rgba(0, 0, 0, 0.2);*/
+}
+#new-desc1 {
+	/*position: relative;*/
+	/*top: -1000px;*/
+	/*right: -500px;*/
+    	/*box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);*/
+}

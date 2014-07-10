@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Evan Caldwell - Self Reflection</title>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="personal, productivity, task management, GTD">
+        <meta name="description" content="Best personal productivity, task management app ever!">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scaleable=no">
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="js/main.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed:400,700|EB+Garamond' rel='stylesheet' type='text/css'>
+    </head>
+    <body onload="setup();">
+        <div id="container">
+            <div class="header">
+                <div>
+                    <h1>Evan Caldwell <span class="small">self reflection</span></h1>
+                </div>
+            </div>
+            <div id="main">
+                <div id="think-boxes">
+                    <h2 id="old-pic-label" class="pic-label">View Old Me</h2>
+                    <h2 id="new-pic-label" class="pic-label">View New Me</h2>
+                    <div id="old-think" class="think-box" onclick="picSlide(this)">
+                        <img src="img/serious.png" alt="The old me" id="old-pic" class="think-pic">
+                        
+                        <div id="old-desc1" class="think-desc">
+                            <h3>Javascript Is Hard.</h3>
+                            <p>When I started this semester I had little eposure to Javascript - basically only what I had taught myself - and I felt that 
+                            Javascript was somewhat difficult to usderstand. Not because the syntax was significantly different or the concepts were 
+                            radical but rather everytime I followed a tutorial or tried to build something on my own I felt this vast universe of unknown 
+                            code and concepts that I would never be able to grasp. For that reason I never took the time to dig deep enough to unravel
+                            that knowledge.</p>
+                            <h3>Function Before Form</h3>
+                            <p>The majority of my personal and professional projects to date have been very data intensive and somewhat complex.
+                            Additionally, the client (in some cases myself) has always been less interested in how the end product looks and more 
+                            interested in whether or not if performs the functions and how well it performs them. Thus, my process - and focus - has 
+                            always been to build functionality first, get a working skeleton and then lay form on top of it - fitting the bits of form to the 
+                            already established function.</p>
+                            <h3>I Know Best</h3>
+                            <p>My personality lends itself to always believing I am right unless someone can provide hard evidence (or a compelling 
+                            enough argument) that I am wrong. In many cases this has served me well because people view me as confident and 
+                            decisive, I can execute ideas quickly and effectively and I can advocate very thoroughly for causes/ideas that I believe in. 
+                            Generally, I win people over to "my side" quite often because it is easy to trust that I'll stick to my guns.</p>
+                            <h3>Take The Lead</h3>
+                            <p>I find that I often fall into/fit into leadership roles quite easily and frequently. The belief that I know best is one big factor 
+                            in that but additionally I have the ability to understand different perspectives and methods of communication. I generally 
+                            don't wait around for others to express interest in leading - they would need to make that aparent and/or take initiative to 
+                            counteract my efforts. I have had quite a bit of leadership experience and good reports on my leadership ability, so it has 
+                            always seemed a natural fit.</p>
+                            <h3>Heavier Is Stronger</h3>
+                            <p>The code that I have written up to the point where I started this class has generally been very.. explicit. Every piece 
+                            spelled out in usually the lengthiest way possible. Heavy on the back end and not very modular. Probably most influenced 
+                            by my lack of knowledge and partly by my inexperience with being creative with code. My projects generally work well but 
+                            are probably more difficult to maintain and understand than they should be.</p>
+                        </div>
+                    </div>
+
+                    <div id="new-think" class="think-box" onclick="picSlide(this)">
+                        <img src="img/playful.png" alt="The new me" id="new-pic" class="think-pic">
+                        <div id="new-desc1" class="think-desc">
+                            <h3>Javascript Is Versatile.</h3>
+                            <p>Working to intently with Javascript on this project has taught me that JS is not difficult, but more importantly  I learned 
+                            how to think about JS differently, how to approach coding differently because of JS. Before I saw JS as a way to manipulate 
+                            the page, make interesting effects and process a little data. Now I see JS as a way to augment or replace other technologies 
+                            for a smoother working more robust application.</p>
+                            <h3>Form Before Function</h3>
+                            <p>Perhaps the single more important concept that struck me this semester is the importance that form plays, not only in the 
+                            final product but more importantly in the planning process. I look at some of the decisions we made and if I had followed my 
+                            prior methods I would have been re-writing code 2 or 3 times. We spent probably 2-3 weeks longer discussing design that I 
+                            would normally have done and looking back on it I would have done the project a disservice by pushing function first. The other 
+                            piece to this process was understanding how really understanding design so intricately affects function and usually leads to a 
+                            simpler product.</p>
+                            <h3>I Know Some Stuff</h3>
+                            <p>Our group was quite diverse and that diversity really challenged my perception of my own knowledge. I remember very 
+                            distincly explaining to the team that we should build out the basic functionality and then work on the design, you walked up and 
+                            interjected (suggested) the idea that perhaps we should consider the design a bit longer and more carefully. Of course everyone 
+                            else agreed and that really shifted my paradigm and opened me up to all of the other wonderful ideas presented by other goup 
+                            members.</p>
+                            <h3>Help To Lead</h3>
+                            <p>Although many groups/organizations require a leader to function properly, I found that is not always the case. Our group 
+                            worked quite well with only a little leadership and as the semester went on I found that I could sometimes be more helpful by 
+                            providing guidence and giving someone else the opportunity to lead. Leadership can be very diverse as well and I saw a 
+                            different perspective on it as I observed others leading.</p>
+                            <h3>Stronger Is Stronger</h3>
+                            <p>Our end product was much, much leaner/simpler than our original scope. Not only was the idea scaled back but the amount of 
+                            and complexity of the code was also reduced. This led to a much more functional, maintainable and usable product. I found that 
+                            I could write more efficient code by taking the time to think about how one function could be made more modular or how a change 
+                            in design could simplify user interactions. I know that more experiences developers have many ways of writing more efficient code 
+                            but this was a first step for me to internalize the concept of strength in simplicity.</p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+        <!-- ============= Hidden divs ============= -->
+            </div>
+        </div>
+    </body>
+</html>
